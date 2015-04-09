@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "html2jade": "node_modules/.bin/html2jade"
+    "html2jade": "node_modules/.bin/html2jade",
+    "harp": "node_modules/.bin/harp"
   },
   "author": "",
   "license": "",
