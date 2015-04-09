@@ -1,0 +1,21 @@
+{
+  "name": "enlightened-structures-show",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "html2jade": "node_modules/.bin/html2jade"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "html2jade": "^0.8.3"
+  },
+  "dependencies": {
+    "harp": "^0.15.2"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  }
+}
