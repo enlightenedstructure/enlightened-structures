@@ -1,204 +1,192 @@
 doctype html
-html
+html.no-js(lang='en')
   head
-    link(href='/styles/foundation_and_overrides.css', rel='stylesheet')
-    |
-    link(href='/atom.xml', rel='alternate', title='Sitewide ATOM Feed', type='application/atom+xml')
-    |
     meta(charset='utf-8')
-    |
-    meta(content='width=device-width', name='viewport')
-    |
-    script(src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')
-    |
-    |
-    title Site Title
-  |
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title Foundation | Welcome
+    |     
+    link(rel='stylesheet', href='css/foundation.css')
+    |     
+    script(src='js/vendor/modernizr.js')
+  |   
   body
-    style(type='text/css').
-      body{font-family:'Raleway',Helvetica,Arial,sans-serif;font-weight:400;background-color:rgba(0,0,0,0.02);}.button{font-family:'Raleway',Helvetica,Arial,sans-serif;}.button-group li{padding-top:3%;}.button-group a{color:rgba(0,0,0,1);background-color:transparent;}.button-group a:hover{color:rgba(0,0,0,0.4);background-color:transparent;}.button-group{float:none;}@media only screen and (min-width: 40.063em) {.button-group{float:right;}}.namelogo{padding:20px 10px 0px 10px;}@media only screen and (min-width: 40.063em) {.namelogo{padding-bottom:20px;}}.namelogo h1{font-size:1.5em;font-weight:600;text-align:center;}@media only screen and (min-width: 40.063em) {.namelogo h1{font-size:16px;text-align:left;}}@media only screen and (min-width: 64.063em) {.namelogo h1{font-size:24px;text-align:left;}}.hero{background:url(http://placehold.it/900x800);background-size:cover;box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.15);height:80%;}.intro-text{padding-top:40%;color:rgba(255,255,255,1);text-align:center;}@media only screen and (min-width: 40.063em) {.intro-text{padding-top:25%;}}@media only screen and (min-width: 64.063em) {.intro-text{padding-top:18%;}}.intro-text p{font-family:'Shadows Into Light',cursive;font-size:44px;}.about,.work,.contact{padding:50px 0 0 0;}.about img{width:250px;height:250px;border-radius:150px;-webkit-border-radius:150px;-moz-border-radius:150px;}.work img:hover{opacity:0.5;-webkit-transition:0.3s ease;-moz-transition:0.3s ease;-ms-transition:0.3s ease;-o-transition:0.3s ease;transition:0.3s ease;}.work li{height:140px;overflow:hidden;}hr{border:0;height:1px;background-image:-webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));background-image:-moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));background-image:-ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));background-image:-o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.75),rgba(0,0,0,0));opacity:0.8;}footer{padding:80px 0 10px 0;}footer a:hover{color:rgba(0,0,0,0.4);background-color:transparent;}
-    |
     .row
-      .small-12.medium-4.large-6.columns.namelogo
-        h1 Name/Logo/Brand
-      |
-      .small-12.medium-8.large-6.columns
-        .nav-bar
-          ul.button-group
-            li
-              a.button(href='#') About
-            |
-            li
-              a.button(href='#') Work
-            |
-            li
-              a.button(href='#') Contact
-    |
-    .hero
-      .row
-        .large-12.columns.intro-text
+      .large-12.columns
+        h1 Welcome to Foundation
+    |     
+    |     
+    .row
+      .large-12.columns
+        .panel
+          h3 We&rsquo;re stoked you want to try Foundation! 
+          | &#x9;        
           p
-            | Hi there!
-            br
-            | I take outdoor pictures.
-    |
-    .row.about
-      .medium-6.large-8.columns
-        h4 About
-        |
-        p
-          | Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.
-      |
-      .medium-6.large-4.columns
-        img(src='http://placehold.it/550x300')
-    |
-    .row.work
-      hr
-      |
-      .large-12.columns
-        h4 Work
-        |
-        p Click on each image to view my work!
-        |
-        ul.clearing-thumbs.small-block-grid-1.medium-block-grid-2.large-block-grid-4(data-clearing='')
-          li
-            a(href='http://placehold.it/550x300')
-              img(data-caption='caption here', src='http://placehold.it/550x300')
-          |
-          li
-            a(href='http://placehold.it/550x300')
-              img(data-caption='caption 2 here...', src='http://placehold.it/550x300')
-          |
-          li
-            a(href='http://placehold.it/550x300')
-              img(data-caption='caption 3 here...', src='http://placehold.it/550x300')
-          |
-          li
-            a(href='http://placehold.it/550x300')
-              img(data-caption='caption 4 here...', src='http://placehold.it/550x300')
-    |
-    .row.contact
-      hr
-      |
-      .large-12.columns
-        h4 Contact Me
-        |
-        .large-4.columns
-          strong Email
-          | :
-          a(href='#')
-            span.__cf_email__(data-cfemail='a6cbc3e6cbdfd6c9d4d2c0c9cacfc988c5c9cb') [email&nbsp;protected]
-            script(cf-hash='f9e31', type='text/javascript').
-              /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("cf-hash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}}}catch(u){}}();/* ]]> */
-        |
-        .large-4.columns
-          strong Twitter
-          | : @twitterhandle
-        |
-        .large-4.columns
-          strong Phone
-          | : 555-555-1234
-    |
-    footer.row
-      .large-12.columns
+            | To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.
+          | &#x9;        
+          p Once you&apos;ve exhausted the fun in this document, you should check out:
+          | &#x9;        
+          .row
+            .large-4.medium-4.columns
+              p
+                a(href='http://foundation.zurb.com/docs') Foundation Documentation
+                br
+                | Everything you need to know about using the framework.
+            | &#x9;        &#x9;
+            .large-4.medium-4.columns
+              p
+                a(href='http://github.com/zurb/foundation') Foundation on Github
+                br
+                | Latest code, issue reports, feature requests and more.
+            | &#x9;        &#x9;
+            .large-4.medium-4.columns
+              p
+                a(href='http://twitter.com/foundationzurb') @foundationzurb
+                br
+                | Ping us on Twitter if you have questions. If you build something with this we&apos;d love to see it (and send you a totally boss sticker).
+    |     
+    .row
+      .large-8.medium-8.columns
+        h5 Here&rsquo;s your basic grid:
+        // Grid Example
         .row
-          .large-6.columns
-            p &copy; Copyright no one at all. Go to town.
-          |
-          .large-6.columns
-            ul.inline-list.right
-              li
-                a(href='#') FAQ
-              |
-              li
-                a(href='#') Privacy
-              |
-              li
-                a(href='#') Suscribe
-    |
-    script(src='js/foundation/foundation.clearing.js')
-    |
-    nav.top-bar(data-topbar='')
-      ul.title-area
-        li.name
-          h1
-            a(href='/') Site Title
-        |
-        li.toggle-topbar.menu-icon
-          a(href='#')
-            span menu
-      |
-      section.top-bar-section
-        ul.right
-          li.divider
-          |
-          li
-            a(href='/about/') About
-    |
-    .row
-      .large-12.columns
-        h1
-          a(href='/2015/01/01/sample-post/') Sample Post
-          |
-          h6 John Doe
-          |
-          p
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pharetra
-            | mollis fringilla. Mauris sapien urna, cursus luctus consequat at, varius ut
-            | ipsum. Etiam neque diam, consectetur et pellentesque et, vulputate in est.
-            | Curabitur sed erat risus. Lorem ipsum dolor sit amet, consectetur adipiscing
-            | elit. Praesent ullamcorper eros non lorem venenatis quis ultricies diam
-            | tincidunt. Duis vestibulum luctus diam vel mattis. Aliquam in massa et tortor
-            | sodales placerat vel eu mi. Integer tincidunt lectus id lacus fermentum
-            | sodales. Vestibulum posuere ante vitae risus pharetra sit amet porttitor elit
-            | dapibus.
-          p
-            | Integer lacus lorem, interdum vel pharetra eu, elementum non enim. Fusce
-            | dictum euismod magna, ut interdum elit suscipit ut. Sed molestie faucibus
-            | sollicitudin. Sed vel quam dui, ac interdum enim. Proin mi sapien, faucibus id
-            | pharetra ut, ornare quis leo. Phasellus sit amet orci in magna hendrerit
-            | convallis ullamcorper ac metus. Aenean posuere nisi sed ante semper a euismod
-            | ante rhoncus. Donec at dui eros, at varius eros. Proin molestie, ipsum sed
-            | vehicula volutpat, turpis tortor sollicitudin dui, vitae convallis enim risus
-            | sit amet nisl. Donec vel tellus et lacus iaculis luctus. Proin tempus
-            | venenatis lorem sagittis vulputate. Morbi non arcu tortor. In hac habitasse
-            | platea dictumst.
-          |
-          p
-    |
-    footer.row
-      .large-12.columns
+          .large-12.columns
+            .callout.panel
+              p
+                strong This is a twelve column section in a row.
+                |  Each of these includes a div.panel element so you can see where the columns are - it&apos;s not required at all for the grid.
+        |         
+        .row
+          .large-6.medium-6.columns
+            .callout.panel
+              p Six columns
+          |           
+          .large-6.medium-6.columns
+            .callout.panel
+              p Six columns
+        |         
+        .row
+          .large-4.medium-4.small-4.columns
+            .callout.panel
+              p Four columns
+          |           
+          .large-4.medium-4.small-4.columns
+            .callout.panel
+              p Four columns
+          |           
+          .large-4.medium-4.small-4.columns
+            .callout.panel
+              p Four columns
+        |         
+        |         
         hr
-        |
-        .row
-          .large-6.columns
-            p &copy; Copyright John Doe 2015.
-          |
-          .large-6.columns
-            ul.inline-list.right
-              li
-                a(href='#') Link 1
-              |
-              li
-                a(href='#') Link 2
-              |
-              li
-                a(href='#') Link 3
-              |
-              li
-                a(href='#') Link 4
-    |
-    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
-    |
-    script(src='//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js')
-    |
-    script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/js/foundation.min.js')
-    |
+        |                 
+        |         
+        h5 We bet you&rsquo;ll need a form somewhere:
+        |         
+        form
+          .row
+            .large-12.columns
+              label Input Label
+              | &#x9;&#x9;&#x9;&#x9;      
+              input(type='text', placeholder='large-12.columns')
+          | &#x9;&#x9;&#x9;&#x9;  
+          .row
+            .large-4.medium-4.columns
+              label Input Label
+              | &#x9;&#x9;&#x9;&#x9;      
+              input(type='text', placeholder='large-4.columns')
+            | &#x9;&#x9;&#x9;&#x9;    
+            .large-4.medium-4.columns
+              label Input Label
+              | &#x9;&#x9;&#x9;&#x9;      
+              input(type='text', placeholder='large-4.columns')
+            | &#x9;&#x9;&#x9;&#x9;    
+            .large-4.medium-4.columns
+              .row.collapse
+                label Input Label
+                | &#x9;&#x9;&#x9;&#x9;        
+                .small-9.columns
+                  input(type='text', placeholder='small-9.columns')
+                | &#x9;&#x9;&#x9;&#x9;        
+                .small-3.columns
+                  span.postfix .com
+          | &#x9;&#x9;&#x9;&#x9;  
+          .row
+            .large-12.columns
+              label Select Box
+              | &#x9;&#x9;&#x9;&#x9;      
+              select
+                option(value='husker') Husker
+                | &#x9;&#x9;&#x9;&#x9;        
+                option(value='starbuck') Starbuck
+                | &#x9;&#x9;&#x9;&#x9;        
+                option(value='hotdog') Hot Dog
+                | &#x9;&#x9;&#x9;&#x9;        
+                option(value='apollo') Apollo
+          | &#x9;&#x9;&#x9;&#x9;  
+          .row
+            .large-6.medium-6.columns
+              label Choose Your Favorite
+              | &#x9;&#x9;&#x9;&#x9;      
+              input#pokemonRed(type='radio', name='pokemon', value='Red')
+              label(for='pokemonRed') Radio 1
+              | &#x9;&#x9;&#x9;&#x9;      
+              input#pokemonBlue(type='radio', name='pokemon', value='Blue')
+              label(for='pokemonBlue') Radio 2
+            | &#x9;&#x9;&#x9;&#x9;    
+            .large-6.medium-6.columns
+              label Check these out
+              | &#x9;&#x9;&#x9;&#x9;      
+              input#checkbox1(type='checkbox')
+              label(for='checkbox1') Checkbox 1
+              | &#x9;&#x9;&#x9;&#x9;      
+              input#checkbox2(type='checkbox')
+              label(for='checkbox2') Checkbox 2
+          | &#x9;&#x9;&#x9;&#x9;  
+          .row
+            .large-12.columns
+              label Textarea Label
+              | &#x9;&#x9;&#x9;&#x9;      
+              textarea(placeholder='small-12.columns')
+      |      
+      |       
+      .large-4.medium-4.columns
+        h5 Try one of these buttons:
+        | &#x9;&#x9;&#x9;  
+        p
+          a.small.button(href='#') Simple Button
+          br
+          |         
+          a.small.radius.button(href='#') Radius Button
+          br
+          |         
+          a.small.round.button(href='#') Round Button
+          br
+          |             
+          |         
+          a.medium.success.button(href='#') Success Btn
+          br
+          |         
+          a.medium.alert.button(href='#') Alert Btn
+          br
+          |         
+          a.medium.secondary.button(href='#') Secondary Btn
+        |            
+        | &#x9;&#x9;&#x9;&#x9;
+        .panel
+          h5 So many components, girl!
+          |         &#x9;
+          p
+            | A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.
+          |         &#x9;
+          a.small.button(href='http://foundation.zurb.com/docs/') Go to Foundation Docs
+    |     
+    |     
+    script(src='js/vendor/jquery.js')
+    |     
+    script(src='js/foundation.min.js')
+    |     
     script.
       $(document).foundation();
-    // livereload snippet
-    script.
-      document.write('<script src="http://'
-      + (location.host || 'localhost').split(':')[0]
-      + ':35729/livereload.js?snipver=1"><\\/script>')
