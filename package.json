@@ -7,6 +7,7 @@
     "build": "./node_modules/.bin/harp compile src dist",
     "dev": "npm start & browser-sync start --proxy 'localhost:9000' --files 'src/*.jade, src/styles/*, src/img/*'",
     "h2j": "./node_modules/.bin/html2jade",
+    "shipit": "npm test && git push origin head",
     "start": "./node_modules/.bin/harp server --port ${PORT:=9000} src",
     "test": "npm run build"
   },
