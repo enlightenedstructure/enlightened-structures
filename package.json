@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "./node_modules/.bin/harp compile",
-    "dev": "./node_modules/.bin/harp server src & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
+    "dev": "npm start & browser-sync start --proxy 'localhost:9000' --files 'src/*.jade, src/styles/*'",
     "html2jade": "./node_modules/.bin/html2jade",
     "start": "./node_modules/.bin/harp server src"
   },
