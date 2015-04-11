@@ -1,0 +1,8 @@
+test:
+  override:
+    - npm run build
+deployment:
+  production:
+    branch: master
+    commands:
+      - git push git@heroku.com:enlightened-structures-show.git $CIRCLE_SHA1:master
