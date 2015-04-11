@@ -92,6 +92,10 @@ body {
     font-size: 44px;
 }
 
+.section-heading {
+    font-family: 'Shadows Into Light', cursive;
+}
+
 .about, .work, .contact {
     padding: 50px 0 0 0;
 }
@@ -102,20 +106,6 @@ body {
     border-radius: 150px;
     -webkit-border-radius: 150px;
     -moz-border-radius: 150px;
-}
-
-.work img:hover {
-    opacity: 0.5;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-    transition: 0.3s ease;
-}
-
-.work li {
-    height: 140px;
-    overflow: hidden;
 }
 
 hr {
