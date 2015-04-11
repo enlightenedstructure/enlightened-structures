@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "./node_modules/.bin/harp compile src dist",
-    "dev": "npm start & browser-sync start --proxy 'localhost:9000' --files 'src/*.jade, src/styles/*'",
-    "html2jade": "./node_modules/.bin/html2jade",
+    "dev": "npm start & browser-sync start --proxy 'localhost:9000' --files 'src/*.jade, src/styles/*, src/img/*'",
+    "h2j": "./node_modules/.bin/html2jade",
     "start": "./node_modules/.bin/harp server --port ${PORT:=9000} src",
     "test": "npm run build"
   },
@@ -20,7 +20,7 @@
     "harp": "^0.13.0"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "~2.7.6"
+    "node": "~0.10.38",
+    "npm": "^2.7.6"
   }
 }
