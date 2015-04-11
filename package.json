@@ -5,15 +5,26 @@
   "main": "index.js",
   "scripts": {
     "html2jade": "node_modules/.bin/html2jade",
-    "harp": "node_modules/.bin/harp"
+
+    "build-js ": "browserify -t coffeeify public/app.coffee -o public/bundle.js",
+    "watch-js": "watchify -t coffeeify public/app.coffee -o public/bundle.js -dv & browser-sync start --config bs-config.js",
+    "dev": "harp server & npm run watch-js",
+    "compile": "npm run build-js && harp compile",
+
+    "devx": "node_modules/.bin/harp server",
+    "xxx": "node_modules/.bin/browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
+    "zzz": "git://github.com/janza/harp.git#browser-sync"
   },
   "author": "",
   "license": "",
   "devDependencies": {
-    "html2jade": "^0.8.3"
+    "html2jade": "^0.8.3",
+    "browser-sync": "^1.3.7",
+    "coffeeify": "^0.7.0",
+    "watchify": "^1.0.2"
   },
   "dependencies": {
-    "harp": "^0.15.2"
+    "harp": "^0.13.0"
   },
   "engines": {
     "node": "0.10.x",
