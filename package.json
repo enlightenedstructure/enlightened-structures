@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "./node_modules/.bin/harp compile",
+    "build": "./node_modules/.bin/harp compile src dist",
     "dev": "npm start & browser-sync start --proxy 'localhost:9000' --files 'src/*.jade, src/styles/*'",
     "html2jade": "./node_modules/.bin/html2jade",
     "start": "./node_modules/.bin/harp server --port ${PORT:=9000} src"
