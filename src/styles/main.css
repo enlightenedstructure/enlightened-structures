@@ -43,7 +43,7 @@ body {
 }
 
 .namelogo h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
 }
@@ -89,18 +89,24 @@ body {
 
 .intro-text p {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 44px;
+    font-size: 2.77rem;
 }
 
 .section-heading {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.about, .work, .contact {
+.about, .people, .contact {
     padding: 50px 0 0 0;
 }
 
-.about img {
+.about p {
+    font-style: italic;
+    font-size: 1.22rem;
+    /*font-weight: bold;*/
+}
+
+.people img {
     width: 250px;
     height: 250px;
     border-radius: 150px;
