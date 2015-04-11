@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "build": "./node_modules/.bin/harp compile",
-    "html2jade": "node_modules/.bin/html2jade",
-    "dev": "node_modules/.bin/harp server & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'"
+    "dev": "./node_modules/.bin/harp server src & browser-sync start --proxy 'localhost:9000' --files '*.jade, *.scss'",
+    "html2jade": "./node_modules/.bin/html2jade",
+    "start": "./node_modules/.bin/harp server src"
   },
   "author": "Harlan T Wood",
   "license": "",
