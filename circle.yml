@@ -1,5 +1,5 @@
 deployment:
   production:
     branch: master
-    commands:
-      - git push git@heroku.com:enlightened-structures-show.git $CIRCLE_SHA1:master
+    heroku:
+      appname: enlightened-structures-show
