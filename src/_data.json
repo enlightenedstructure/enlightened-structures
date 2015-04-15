@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "name": "IPFS",
+            "image": "img/ipfs.jpg"
+        },
+        {
+            "name": "Hylo",
+            "image": "img/hylo.jpg"
+        }
+    ]
+}
