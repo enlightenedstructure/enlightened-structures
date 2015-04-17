@@ -10,7 +10,7 @@
     "dev": "npm start & npm run watch-data & npm run watch",
     "h2j": "./node_modules/.bin/html2jade",
     "shipit": "npm build && git push origin head",
-    "start": "node ./server.js",
+    "start": "./node_modules/.bin/harp server --port ${PORT:=9000} src",
     "test": "npm run build",
     "watch": "browser-sync start --port 8080 --proxy 'localhost:9000' --files 'src/*.json, src/*.jade, src/styles/*, src/img/*'",
     "watch-data": "./node_modules/.bin/nodemon --watch data.coffee data.coffee"
@@ -24,11 +24,11 @@
     "lightsaber": "^0.4.1"
   },
   "dependencies": {
-    "harp": "^0.13.0",
-    "newrelic": "^1.18.3"
+    "harp": "^0.13.0"
   },
   "engines": {
     "node": "~0.10.38",
     "npm": "^2.7.6"
   }
 }
+
