@@ -1,5 +1,10 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
 deployment:
   production:
     branch: master
-    heroku:
-      appname: enlightened-structures
+    commands:
+      - npm run publish
