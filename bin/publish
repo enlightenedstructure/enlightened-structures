@@ -8,15 +8,13 @@ handle_error = (error) ->
     console.error error
     process.exit error.code or 1
 
-handle_info = (message) -> console.log message
-
 dist = path.join __dirname, '..', 'dist'
 
 options =
-  logger: handle_info
+  logger: console.log
   dotfiles: true
   user:
     name: 'Deploy Bot',
-    email: 'deploy+bot@dstack.org'
+    email: 'deploy+bot@enlightenedstructures.net'
 
 ghpages.publish dist, options, handle_error
