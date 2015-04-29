@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "npm run clean && npm run data && npm run compile",
+    "build": "npm run clean && npm run data && npm run compile && npm run clean",
     "clean": "rm -rf dist/",
     "compile": "harp compile src dist",
     "data": "coffee data.coffee",
@@ -13,7 +13,7 @@
     "shipit": "npm run test && git push origin head",
     "start": "harp server --port ${PORT:=9000} src",
     "test": "npm run build",
-    "watch": "browser-sync start --port 8080 --proxy 'localhost:9000' --files 'src/**/*'",
+    "watch": "browser-sync start --port 8080 --proxy \"localhost:${PORT:=9000}\" --files 'src/**/*'",
     "watch-data": "nodemon --watch data.coffee data.coffee"
   },
   "author": "Harlan T Wood",
