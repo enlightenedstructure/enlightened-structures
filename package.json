@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "npm run data && npm run compile",
+    "build": "npm run clean && npm run data && npm run compile",
     "clean": "rm -rf dist/",
     "compile": "harp compile src dist",
     "data": "coffee data.coffee",
