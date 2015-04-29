@@ -3,8 +3,14 @@ fs = require 'fs'
 
 data =
   upcoming: [
-    'Jim McCarthy'
-    'Jeremie Miller'
+    {
+      name: 'Jim McCarthy'
+      photo_source: 'https://twitter.com/mccarthyjim1'
+    }
+    {
+      name: 'Jeremie Miller'
+      photo_source: 'https://www.flickr.com/photos/docsearls/5578718966/'
+    }
   ]
 
   hosts: [
