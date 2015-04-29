@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "npm run clean && npm run data && npm run compile && npm run clean",
+    "build": "npm run clean && npm run data && npm run compile",
     "clean": "rm -rf dist/",
     "compile": "harp compile src dist",
     "data": "coffee data.coffee",
@@ -12,7 +12,7 @@
     "publish": "npm run build && bin/publish",
     "shipit": "npm run test && git push origin head",
     "start": "harp server --port ${PORT:=9000} src",
-    "test": "npm run build",
+    "test": "npm run build && npm run clean",
     "watch": "browser-sync start --port 8080 --proxy \"localhost:${PORT:=9000}\" --files 'src/**/*'",
     "watch-data": "nodemon --watch data.coffee data.coffee"
   },
