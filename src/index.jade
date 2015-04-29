@@ -20,35 +20,13 @@ hr
 .row
   h2.section-heading.text-center Upcoming Guests
 
-.row.people
-  .medium-6.large-4.columns
-    img(src='img/jim-mccarthy.jpg')
-  .medium-6.large-8.columns
-    h4 Jim McCarthy
-    p
-      | Jim McCarthy is blessed with a proven ability to see the future, to create value around what he sees, and to thereby bring the future closer.  While at Microsoft and Bell Laboratories, he saw there was a better way to build products by focusing on the team around him.  He used this observation to create one of the greatest Microsoft teams, the Visual C++ team.  Much of Microsoft adopted his ideas as articulated in the seminal book, Dynamics of Software Development.  His approach and observations have been shared through many speaking engagements. They formed the basis of Microsoft Solutions Framework and were a catalyst for and the true progenitor of the Extreme and Agile programming movements.
-    p
-      | Jim partners with his wife, Michele McCarthy, to run 
-      a(href="http://www.mccarthyshow.com/") McCarthy Technologies, Inc., 
-      | which provides technology and consulting that enables organizations and teams to consistently generate the greatest possible results.  The key to these results is an innovative, proprietary technology called "The Core".  It encapsulates and makes accessible the best interpersonal collaboration technology currently available and has been thoroughly researched, tested and applied over the past twelve years.  Just as Jim’s earlier approaches helped form Microsoft’s successful culture, and ultimately gave rise to the XP and Agile movements, his current research into The Core is poised to help a new generation of organizations achieve their highest potential.
-    p
-      | Pioneers of true civilzation, Jim and Michele have given an open source gift to the world: 
-      a(href="http://liveingreatness.com/") The Core Protocols
-      | , a beautiful distillation of the practices that make teams magnificent.
-
-.row.people
-  .medium-6.large-4.columns
-    img(src='img/jeremie-miller.jpg')
-  .medium-6.large-8.columns
-    h4 Jeremie Miller
-    | Links:
-    ul
-      li 
-        a(href="http://telehash.org/") Telehash 
-      li 
-        a(href="http://redecentralize.org/interviews/2013/10/17/07-jeremie-telehash.html") Redecentralize interview 
-      li 
-        a(href="https://www.youtube.com/watch?v=uslYWTOtGpw") Decentral.tv interview 
+for guest in public._data.upcoming
+  .row.people
+    .medium-6.large-4.columns
+      img(src='img/#{ guest }.jpg')
+    .medium-6.large-8.columns
+      h4= guest
+      != partial('projects/' + guest)
 
 hr
 .row

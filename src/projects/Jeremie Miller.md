@@ -1,0 +1,3 @@
+- [Telehash](http://telehash.org/)
+- [Redecentralize interview](http://redecentralize.org/interviews/2013/10/17/07-jeremie-telehash.html)  
+- [Decentral.tv interview](https://www.youtube.com/watch?v=uslYWTOtGpw)

@@ -2,6 +2,11 @@ fs = require 'fs'
 {log, pjson} = require 'lightsaber'
 
 data =
+  upcoming: [
+    'Jim McCarthy'
+    'Jeremie Miller'
+  ]
+
   projects: [
     {
       name: "IPFS"

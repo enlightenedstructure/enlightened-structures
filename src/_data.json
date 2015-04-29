@@ -1,4 +1,8 @@
 {
+    "upcoming": [
+        "Jim McCarthy",
+        "Jeremie Miller"
+    ],
     "projects": [
         {
             "name": "IPFS",
