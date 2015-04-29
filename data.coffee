@@ -7,6 +7,11 @@ data =
     'Jeremie Miller'
   ]
 
+  hosts: [
+    'Harlan T Wood'
+    'Steven Starr'
+  ]
+
   projects: [
     {
       name: "IPFS"

@@ -32,45 +32,10 @@ hr
 .row
   h2.section-heading.text-center Hosts
 
-.row.people
-  .medium-6.large-8.columns
-    h4 Harlan T Wood
-    p
-      | Harlan is a core creator and cofounder of the Enlightened Structure projects, 
-      | which is holding visions for, and relentlessly prototyping, global-scale collaboration, 
-      | universal information visualization and navigation systems, distributed trust systems, 
-      | and semantic graph-shaped blockchains upon which to build all the rest.
-    p
-      | Harlan brings a career of agile software development together with a 
-      | diverse background including years of deep training in meditation, personal growth, 
-      | and transformational work in a variety of systems.
-      | His recent work includes Technical Architect of 
-      a(href="http://superluminal.is/") Superluminal Systems
-      , 
-      | creators of the 
-      a(href="http://academy.resonance.is/") Resonance Academy
-      | .  
-  .medium-6.large-4.columns
-    img(src='img/harlan.jpg')
-
-.row.people
-  .medium-6.large-8.columns
-    h4 Steven Starr
-    p 
-      | Steven is passionate about the alignment of media, technology, storytelling and consciousness. A co-founder of Noomap, a radical, syntonic approach to the Internet, Steven helped pioneer creator sustainability with Revver, grassroots journalism with LA.IndyMedia, P2P with 
-      a(href="http://freenetproject.org") The Freenet Project 
-      |   and Uprizer, and co-creative storytelling with StudioOccupy and CitizenGlobal.
-    p 
-      | Earlier, Steven produced the Sundance global water crisis doc 
-      a(href="http://flowthefilm.com") FLOW
-      | , co-exec-produced Academy Award-nominated urban farming doc The Garden, and ran 
-      a(href="http://kpfk.org/") KPFK-FM 
-      |, the largest progressive radio signal in the US.
-    p 
-      | Earlier, he wrote/directed independent film, produced network television, ran the New York film office for the William Morris Agency, and started out working on concerts for 
-      | Bob Marley &amp; the Wailers. 
-      | He's served on multiple boards, including the  
-      a(href="http://ievolve.org") Center for Integral Wisdom 
-      |, and the San Francisco Film Society.  
-  .medium-6.large-4.columns
-    img(src='img/steven.jpg')
+for host in public._data.hosts
+  .row.people
+    .medium-6.large-8.columns
+      h4= host
+      != partial('hosts/' + host)
+    .medium-6.large-4.columns
+      img(src='img/#{ host }.jpg')
