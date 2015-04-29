@@ -27,7 +27,7 @@ for guest in public._data.upcoming
         img(src='img/#{ guest.name }.jpg')
     .medium-6.large-8.columns
       h4= guest.name
-      != partial('projects/' + guest.name)
+      != partial('content/projects/' + guest.name)
 
 hr
 .row
@@ -37,6 +37,6 @@ for host in public._data.hosts
   .row.people
     .medium-6.large-8.columns
       h4= host
-      != partial('hosts/' + host)
+      != partial('content/hosts/' + host)
     .medium-6.large-4.columns
       img(src='img/#{ host }.jpg')
