@@ -2,19 +2,18 @@
   "name": "enlightened-structures",
   "version": "0.0.1",
   "description": "",
-  "main": "server.js",
   "scripts": {
-    "build": "npm run clean && npm run data && npm run compile",
-    "clean": "rm -rf dist/",
-    "compile": "harp compile src dist",
-    "data": "coffee data.coffee",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf src/_data.json dist/",
+    "compile": "npm run data && harp compile src dist",
+    "data": "bin/coffee2json src/_data.coffee src/_data.json",
     "dev": "npm run start & npm run watch-data & npm run watch",
     "publish": "npm run build && bin/publish && npm run clean",
     "shipit": "npm run test && git push origin head",
     "start": "harp server --port ${PORT:=9000} src",
     "test": "npm run build && npm run clean",
     "watch": "browser-sync start --port 8080 --proxy \"localhost:${PORT:=9000}\" --files 'src/**/*'",
-    "watch-data": "nodemon --watch data.coffee data.coffee"
+    "watch-data": "nodemon --watch src/_data.coffee --exec  ./node_modules/.bin/coffee bin/coffee2json src/_data.coffee src/_data.json"
   },
   "author": "Harlan T Wood",
   "repository": {

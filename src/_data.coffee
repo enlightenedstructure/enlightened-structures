@@ -1,7 +1,9 @@
-fs = require 'fs'
-{log, pjson} = require 'lightsaber'
-
 data =
+  hosts: [
+    'Harlan T Wood'
+    'Steven Starr'
+  ]
+
   upcoming: [
     {
       name: 'Jim McCarthy'
@@ -13,20 +15,14 @@ data =
     }
   ]
 
-  hosts: [
-    'Harlan T Wood'
-    'Steven Starr'
-  ]
-
   projects: [
     {
-      name: "IPFS"
-      image: "img/ipfs.jpg"
+      name: "InterPlanetary File System"
     }
     {
       name: "Hylo"
-      image: "img/hylo.jpg"
     }
   ]
 
-fs.writeFileSync './src/_data.json', pjson(data)
+
+module.exports = data

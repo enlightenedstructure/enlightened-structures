@@ -1,0 +1,12 @@
+#!/usr/bin/env coffee
+
+fs = require 'fs'
+path = require 'path'
+
+# {p} = require 'lightsaber'
+
+[coffee_path, json_path] = process.argv[2...]
+
+data = require path.resolve coffee_path
+json = JSON.stringify data, null, 4
+fs.writeFile path.resolve(json_path), json
