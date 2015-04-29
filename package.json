@@ -9,7 +9,7 @@
     "compile": "harp compile src dist",
     "data": "coffee data.coffee",
     "dev": "npm run start & npm run watch-data & npm run watch",
-    "publish": "npm run build && bin/publish",
+    "publish": "npm run build && bin/publish && npm run clean",
     "shipit": "npm run test && git push origin head",
     "start": "harp server --port ${PORT:=9000} src",
     "test": "npm run build && npm run clean",
