@@ -13,6 +13,7 @@ dist = path.join __dirname, '..', 'dist'
 options =
   logger: console.log
   dotfiles: true
+  message: 'Update gh-pages [ci skip]'
   user:
     name: 'Deploy Bot',
     email: 'deploy+bot@enlightenedstructures.net'
