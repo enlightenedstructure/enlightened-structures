@@ -15,7 +15,7 @@ options =
   dotfiles: true
   message: 'Update gh-pages [ci skip]'
   user:
-    name: 'Deploy Bot',
+    name: 'Deploy Bot'
     email: 'deploy+bot@enlightenedstructures.net'
 
 ghpages.publish dist, options, handle_error
