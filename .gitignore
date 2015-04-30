@@ -1,3 +1,4 @@
 /dist/
 /node_modules/
+/src/_data.json
 npm-debug.log
