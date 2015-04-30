@@ -31,7 +31,7 @@ data =
     {
       name: "Synereo"
       image_type: "png"
-      image_source: 'https://github.com/ipfs/website'
+      image_source: 'http://www.synereo.com/'
     }
   ]
 
