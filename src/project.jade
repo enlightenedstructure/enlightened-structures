@@ -1,0 +1,9 @@
+.row.people(id= project.slug)
+  .medium-6.large-4.columns
+    a(target='photo_source' href='#{ project.photo_source }')
+      img(src='img/#{ project.slug }.#{ project.image_type || "jpg" }')
+  .medium-6.large-8.columns
+    a(href= "##{ project.slug }")
+      h4= project.name
+    != partial('content/projects/' + project.slug)
+
