@@ -21,12 +21,13 @@ hr
   h2.section-heading.text-center Upcoming Guests
 
 for guest in public._data.upcoming
-  .row.people
+  .row.people(id= guest.slug)
     .medium-6.large-4.columns
       a(target='photo_source' href='#{ guest.photo_source }')
         img(src='img/#{ guest.name }.jpg')
     .medium-6.large-8.columns
-      h4= guest.name
+      a(href= "##{ guest.slug }")
+        h4= guest.name
       != partial('content/projects/' + guest.name)
 
 hr
@@ -34,9 +35,10 @@ hr
   h2.section-heading.text-center Hosts
 
 for host in public._data.hosts
-  .row.people
+  .row.people(id= host.slug)
     .medium-6.large-8.columns
-      h4= host
-      != partial('content/hosts/' + host)
+      a(href= "##{ host.slug }")
+        h4= host.name
+      != partial('content/hosts/' + host.name)
     .medium-6.large-4.columns
-      img(src='img/#{ host }.jpg')
+      img(src='img/#{ host.name }.jpg')

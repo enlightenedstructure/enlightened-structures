@@ -1,24 +1,34 @@
 {
     "hosts": [
-        "Harlan T Wood",
-        "Steven Starr"
+        {
+            "name": "Harlan T Wood",
+            "slug": "Harlan-T-Wood"
+        },
+        {
+            "name": "Steven Starr",
+            "slug": "Steven-Starr"
+        }
     ],
     "upcoming": [
         {
             "name": "Jim McCarthy",
-            "photo_source": "https://twitter.com/mccarthyjim1"
+            "photo_source": "https://twitter.com/mccarthyjim1",
+            "slug": "Jim-McCarthy"
         },
         {
             "name": "Jeremie Miller",
-            "photo_source": "https://www.flickr.com/photos/docsearls/5578718966/"
+            "photo_source": "https://www.flickr.com/photos/docsearls/5578718966/",
+            "slug": "Jeremie-Miller"
         }
     ],
     "projects": [
         {
-            "name": "InterPlanetary File System"
+            "name": "InterPlanetary File System",
+            "slug": "InterPlanetary-File-System"
         },
         {
-            "name": "Hylo"
+            "name": "Hylo",
+            "slug": "Hylo"
         }
     ]
 }
