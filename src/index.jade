@@ -21,7 +21,7 @@ hr
   h2.section-heading.text-center Upcoming Guests
 
 for project in public._data.upcoming
-  != partial('project', { project: project })
+  != partial('_project', { project: project })
 
 hr
 .row
@@ -41,4 +41,4 @@ hr
   h2.section-heading.text-center Other Projects We Love
 
 for project in public._data.love
-  != partial('project', { project: project })
+  != partial('_project', { project: project })
