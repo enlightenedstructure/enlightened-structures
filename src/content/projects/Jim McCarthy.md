@@ -1,4 +1,4 @@
-Jim McCarthy is a pioneering creator of protocols for civilzation, including The Core Protocols, a battle-tested distillation of the practices that make teams magnificent.
+Creator of a lanugage of protocols for civilzation, including The Core Protocols, a battle-tested distillation of simple practices for creating magnificent teams.
 
-- [Jim and Michele McCarthy](http://www.mccarthyshow.com/)
+- [The McCarthy Show](http://www.mccarthyshow.com/) - Jim and Michele McCarthy
 - [The Core Protocols](http://liveingreatness.com/)
