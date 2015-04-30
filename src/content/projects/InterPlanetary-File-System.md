@@ -1,0 +1,1 @@
+Imagine Git + BitTorrent: IPFS provides a content-addressed block storage model, with content-addressed hyperlinks, forming the foundations for versioned file systems, blockchains, and even a Permanent Web.

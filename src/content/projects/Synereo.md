@@ -1,0 +1,1 @@
+A framework for managing the economy of attention by creating a "social brain" that optimizes  experiences on the network, social or otherwise, shaping the stream of information in ways that reflect what people consider to be interesting and valuable.

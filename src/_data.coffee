@@ -14,20 +14,24 @@ data =
   upcoming: [
     {
       name: 'Jim McCarthy'
-      photo_source: 'https://twitter.com/mccarthyjim1'
+      image_source: 'https://twitter.com/mccarthyjim1'
     }
     {
       name: 'Jeremie Miller'
-      photo_source: 'https://www.flickr.com/photos/docsearls/5578718966/'
+      image_source: 'https://www.flickr.com/photos/docsearls/5578718966/'
     }
   ]
 
-  projects: [
+  love: [
     {
       name: "InterPlanetary File System"
+      image_type: "png"
+      image_source: 'https://github.com/ipfs/website'
     }
     {
-      name: "Hylo"
+      name: "Synereo"
+      image_type: "png"
+      image_source: 'https://github.com/ipfs/website'
     }
   ]
 
