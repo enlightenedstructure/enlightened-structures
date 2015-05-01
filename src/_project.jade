@@ -6,4 +6,8 @@
     a(href= "##{ project.slug }")
       h4= project.name
     != partial('content/projects/' + project.slug)
+    [
+    a(href= project.link)= project.link
+    ]
+
 

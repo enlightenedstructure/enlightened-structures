@@ -25,23 +25,27 @@ data =
   love: [
     {
       name: "InterPlanetary File System"
-      image_type: "png"
+      link: 'http://ipfs.io'
       image_source: 'https://github.com/ipfs/website'
+      image_type: "png"
     }
     {
       name: "Synereo"
-      image_type: "png"
+      link: 'http://www.synereo.com/'
       image_source: 'http://www.synereo.com/'
+      image_type: "png"
     }
     {
       name: 'MaidSafe'
-      image_type: "png"
+      link: 'http://maidsafe.net/'
       image_source: 'http://maidsafe.net/'
+      image_type: "png"
     }
     {
       name: 'Ceptr'
-      image_type: "png"
+      link: 'http://ceptr.org/'
       image_source: 'http://ceptr.org/'
+      image_type: "png"
     }
   ]
 
