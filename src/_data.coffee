@@ -38,6 +38,11 @@ data =
       image_type: "png"
       image_source: 'http://maidsafe.net/'
     }
+    {
+      name: 'Ceptr'
+      image_type: "png"
+      image_source: 'http://ceptr.org/'
+    }
   ]
 
 # add slug based on 'name'
