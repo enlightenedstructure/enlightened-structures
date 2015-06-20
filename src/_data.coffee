@@ -28,21 +28,15 @@ data =
 
   love: [
     {
-      name: "InterPlanetary File System"
-      link: 'http://ipfs.io'
-      image_source: 'https://github.com/ipfs/website'
+      name: 'MaidSafe'
+      link: 'http://maidsafe.net/'
+      image_source: 'http://maidsafe.net/'
       image_type: "png"
     }
     {
       name: "Synereo"
       link: 'http://www.synereo.com/'
       image_source: 'http://www.synereo.com/'
-      image_type: "png"
-    }
-    {
-      name: 'MaidSafe'
-      link: 'http://maidsafe.net/'
-      image_source: 'http://maidsafe.net/'
       image_type: "png"
     }
     {
