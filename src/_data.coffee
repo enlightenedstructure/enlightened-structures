@@ -17,6 +17,10 @@ data =
       image_source: 'https://twitter.com/mccarthyjim1'
     }
     {
+      name: 'Juan Benet'
+      image_source: 'https://github.com/jbenet'
+    }
+    {
       name: 'Jeremie Miller'
       image_source: 'https://www.flickr.com/photos/docsearls/5578718966/'
     }
@@ -39,6 +43,12 @@ data =
       name: 'MaidSafe'
       link: 'http://maidsafe.net/'
       image_source: 'http://maidsafe.net/'
+      image_type: "png"
+    }
+    {
+      name: 'Swarm'
+      link: 'https://swarm.fund/'
+      image_source: 'http://ceptr.org/'
       image_type: "png"
     }
     {

@@ -13,7 +13,7 @@
     "start": "harp server --port ${PORT:=9000} src",
     "test": "npm run build && npm run clean",
     "watch": "browser-sync start --port 8080 --proxy \"localhost:${PORT:=9000}\" --files 'src/**/*'",
-    "watch-data": "nodemon --watch src/_data.coffee --exec ./node_modules/.bin/coffee bin/coffee2json src/_data.coffee src/_data.json"
+    "watch-data": "nodemon --watch src/_data.coffee --exec coffee bin/coffee2json src/_data.coffee src/_data.json"
   },
   "author": "Harlan T Wood",
   "repository": {

@@ -1,0 +1,1 @@
+A collaboratively owned membership network decidated to facilitating abundance via Distributed Collaborative Organizations.  DCOs cost nothing to set up. and allow you to organize bottom up instead of top down and distribute abundance to every member who contributes.
