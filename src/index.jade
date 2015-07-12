@@ -12,8 +12,8 @@
 .row.about
   .large-12.columns
     p
-      | Enlightened Structures is a new show interviewing pioneers who are innovating 
-      | technological, social, and spiritual systems which upgrade the adjacent possible, 
+      | Enlightened Structures is a new show interviewing pioneers who are innovating
+      | technological, social, and spiritual systems which upgrade the adjacent possible,
       | and bootstrap a world of abundance in which every creator is a valuable collaborator.
 
 hr
@@ -42,3 +42,35 @@ hr
 
 for project in public._data.love
   != partial('_project', { project: project })
+
+//hr
+//.row
+//  h2.section-heading.text-center Visual Map
+
+//.transclude
+//  iframe(src='http://bl.ocks.org/harlantwood/raw/8f486a7d5af1b72074b6/')
+
+
+.core-network(
+  data-core-name="Enlightened Structures"
+  data-core-gsheet="1GiXbr7Vj-dz3hRpwWns2i_SyS_IIF2KHDqgRJ8d_3qU"
+  data-gsheet-orientation="rows"
+  data-color-tiles="true"
+  data-symbol-path=""
+  data-hide-until-launch="false"
+  data-renderer="D3"
+  data-hex-fill="url(#radialgradient-blue)"
+  data-launch-button="false"
+  data-close-button="false"
+  data-show-node-names="true"
+  )
+
+
+svg#core-network-d3(width='1000', height='600')
+  defs
+    radialgradient#radialgradient-blue(cx='50%', cy='50%', r='50%', fx='50%', fy='50%')
+      stop.center(offset='0%')
+      stop.periphery(offset='100%')
+
+//script(type='text/javascript', src='http://assets.corenetwork.is/js/bundle.js')
+script(type='text/javascript', src='http://localhost:8080/dropin.js')

@@ -7,7 +7,13 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='styles/foundation.css')
     link(rel='stylesheet', href='styles/main.css')
     //- script(src='/js/vendor/modernizr.js')
-  body      
+
+    // link(rel="stylesheet", href="http://assets.corenetwork.is/styles/app.css")
+    link(rel="stylesheet", href="http://localhost:8080/styles/app.css")
+
+    script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+    script(type="text/javascript", src="vendor/d3/d3.v3.min.js" charset="utf-8")
+  body
 
     != yield
 

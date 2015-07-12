@@ -132,3 +132,8 @@ footer a:hover {
     color: rgba(0, 0, 0, 0.4);
     background-color: transparent;
 }
+
+/* core network */
+g.node.ring1 {
+  fill: rgba(178,170,164,0.7);
+}
