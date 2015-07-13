@@ -9,11 +9,18 @@
         br
         | Projects Creating the Future of Humanity
 
+hr
+.row
+  h2.section-heading.text-center Project Visions
+
+for project in public._data.visions
+  != partial('_project', { project: project })
+
 .row.about
   .large-12.columns
     p
-      | Enlightened Structures is a new show interviewing pioneers who are innovating 
-      | technological, social, and spiritual systems which upgrade the adjacent possible, 
+      | Enlightened Structures is a new show interviewing pioneers who are innovating
+      | technological, social, and spiritual systems which upgrade the adjacent possible,
       | and bootstrap a world of abundance in which every creator is a valuable collaborator.
 
 hr
